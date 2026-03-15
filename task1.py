@@ -35,21 +35,24 @@ Date: 17/03/2026
 Author: Nicholas Young
 """
 
-import numpy as np
+import numpy as np # pylint: disable=import-error
 
-def solve_poisson_sor(N=101, omega=None, tol=1e-8, max_iter=50000):
+# N = NO. OF GRIDS, tol = CONVERGENCE CONDITION,
+# max_iter = NO. OF ITERATIONS BEFORE LOOP IS FORCEFULLY STOPPED
+
+def solve_poisson_sor(n=101, tol=1e-8, max_iter=50000):
     """
     Solve delta phi = f on a 1 m x 1 m square using over-relaxation method.
     """
 
     # SET GRID (N = No. of grids, h = lattice spacing)
-    h = 1.0 / (N - 1)
+    h = 1.0 / (n - 1) #metres
 
     # POTENTIAL GIRD
-    phi = np.zeros((N, N), dtype=float)
+    phi = np.zeros((n, n), dtype=float)
 
     # SOURCE GRID 'F'(PHI=F)
-    f = np.zeros((N, N), dtype=float)
+    f = np.zeros((n, n), dtype=float)
 
     # BOUNDARY CONDITIONS FOR NxN GRID (VOLTS)
     phi[0, :]  = 100.0 #V
@@ -58,16 +61,16 @@ def solve_poisson_sor(N=101, omega=None, tol=1e-8, max_iter=50000):
     phi[:, -1] = 100.0 #V
 
     # DEFINE OPTIMAL OMEGA (FROM NOTES)
-    omega = 2.0 / (1.0 + np.sin(np.pi / N))
+    omega = 2.0 / (1.0 + np.sin(np.pi / n))
 
-    # SOR CALCULATION LOOP
+    # OVER REELAXATION CALCULATION LOOP
     for iteration in range(max_iter):
         max_change = 0.0
 
-        for i in range(1, N - 1):
-            for j in range(1, N - 1):
+        for i in range(1, n - 1):
+            for j in range(1, n - 1):
 
-                # Finite-difference Poisson update
+                # FINITE-DIFFERENCE POISSON UPDATE FOR EACH POINT IN GRID
                 phi_star = 0.25 * (
                     phi[i+1, j] +
                     phi[i-1, j] +
@@ -94,13 +97,13 @@ def solve_poisson_sor(N=101, omega=None, tol=1e-8, max_iter=50000):
 
 
 # SOLVE
-phi, h = solve_poisson_sor()
+PHI, H = solve_poisson_sor()
 
 # VOLTAGE OF THREE RANDOM POINTS TO DETERMINE
 points = [(0.50, 0.50), (0.02, 0.02), (0.02, 0.50)]
 
 # PRINT VOLTAGES
 for x, y in points:
-    i = round(x / h)
-    j = round(y / h)
-    print(f"phi({x:.2f}, {y:.2f}) = {phi[i, j]:.6f} V")
+    I = round(x / H)
+    J = round(y / H)
+    print(f"PHI({x:.2f}, {y:.2f}) = {PHI[I, J]:.6f} V")
