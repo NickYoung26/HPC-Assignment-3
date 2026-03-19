@@ -101,7 +101,7 @@ def solve_poisson_sor(n=101, tol=1e-8, max_iter=50000):
 PHI, H = solve_poisson_sor()
 
 # VOLTAGE OF THREE RANDOM POINTS TO DETERMINE
-points = [(0.50, 0.50), (0.02, 0.02), (0.02, 0.50), (0.98, 0.98)]
+points = [(0.50, 0.50), (0.02, 0.02), (0.02, 0.50)]
 
 # PRINT VOLTAGES
 for x, y in points:

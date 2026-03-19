@@ -126,8 +126,12 @@ def main():
     n = 101
     h = 1.0 / (n - 1)
 
-    # Random Point
-    points_xy = [(0.36, 0.87)]
+    # Assignment points in metres
+    points_xy = [
+        (0.50, 0.50),
+        (0.02, 0.02),
+        (0.02, 0.50),
+    ]
 
     point_indices = [point_to_index(x, y, h) for x, y in points_xy]
 
@@ -185,8 +189,11 @@ def main():
             print(
                 f"Point ({x:.2f} m, {y:.2f} m): "
                 f"phi = {mean:.6f} V, "
+                f"standard error = {stderr:.6f} V, "
                 f"standard dev = {stddev:.6f} V, "
                 f"walkers = {global_count[p]}"
+                f"walker count = {walkers_per_point} "
+                f"chunk size = {chunk_size}"
             )
 
 
