@@ -106,5 +106,5 @@ points = [(0.50, 0.50), (0.02, 0.02), (0.02, 0.50), (0.98, 0.98)]
 # PRINT VOLTAGES
 for x, y in points:
     J = round(x / H)
-    I = round((1.0 - y) / h)
+    I = round((1.0 - y) / H)
     print(f"PHI({x:.2f}, {y:.2f}) = {PHI[I, J]:.6f} V")

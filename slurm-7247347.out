@@ -1,0 +1,41 @@
+Loading mpi version 2021.6.0
+Converged in 414 iterations
+PHI(0.50, 0.50) = 50.000000 V
+PHI(0.02, 0.02) = 99.912451 V
+PHI(0.02, 0.50) = 97.640038 V
+PHI(0.98, 0.98) = 0.087549 V
+
+ Performance counter stats for './task1.py':
+
+       23472838545      cycles:u                                                              
+       61297358711      instructions:u                   #    2.61  insn per cycle            
+           1515820      cache-misses:u                                                        
+
+       7.581242501 seconds time elapsed
+
+       6.610714000 seconds user
+       0.130361000 seconds sys
+
+
+Used 16 MPI ranks
+Grid size N = 101, h = 0.01000 m
+Walkers per point = 100000
+Chunk size = 2500
+
+Point (0.50 m, 0.50 m): phi ≈ 50.020000 V, standard error ≈ 0.158114 V, walkers = 100000
+Point (0.02 m, 0.02 m): phi ≈ 99.917000 V, standard error ≈ 0.009107 V, walkers = 100000
+Point (0.02 m, 0.50 m): phi ≈ 97.645000 V, standard error ≈ 0.047954 V, walkers = 100000
+Point (0.98 m, 0.98 m): phi ≈ 0.083000 V, standard error ≈ 0.009107 V, walkers = 100000
+
+ Performance counter stats for 'mpirun -np 16 ./task2.py':
+
+     3300655186138      cycles:u                                                              
+     7871075692159      instructions:u                   #    2.38  insn per cycle            
+          20621172      cache-misses:u                                                        
+
+      84.157188731 seconds time elapsed
+
+    1314.683159000 seconds user
+      24.134925000 seconds sys
+
+
