@@ -20,6 +20,8 @@
 
 # Run properly
 
-./over-relax.py
+module load mpi
 
+perf stat -e cycles,instructions,cache-misses ./task1.py
 
+perf stat -e cycles,instructions,cache-misses mpirun -np 16 ./task2.py

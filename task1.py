@@ -55,10 +55,11 @@ def solve_poisson_sor(n=101, tol=1e-8, max_iter=50000):
     f = np.zeros((n, n), dtype=float)
 
     # BOUNDARY CONDITIONS FOR NxN GRID (VOLTS)
-    phi[0, :]  = 100.0 #V
-    phi[-1, :] = 100.0 #V
-    phi[:, 0]  = 100.0 #V
-    phi[:, -1] = 100.0 #V
+    # i = x, j = y in form [i,j]
+    phi[0, :]  = 0     #TOP
+    phi[-1, :] = 100.0 #BOTTOM
+    phi[:, 0]  = 100.0 #LEFT
+    phi[:, -1] = 0     #RIGHT
 
     # DEFINE OPTIMAL OMEGA (FROM NOTES)
     omega = 2.0 / (1.0 + np.sin(np.pi / n))
@@ -75,7 +76,7 @@ def solve_poisson_sor(n=101, tol=1e-8, max_iter=50000):
                     phi[i+1, j] +
                     phi[i-1, j] +
                     phi[i, j+1] +
-                    phi[i, j-1] +
+                    phi[i, j-1] -
                     h**2 * f[i, j]
                 )
 
@@ -100,10 +101,10 @@ def solve_poisson_sor(n=101, tol=1e-8, max_iter=50000):
 PHI, H = solve_poisson_sor()
 
 # VOLTAGE OF THREE RANDOM POINTS TO DETERMINE
-points = [(0.50, 0.50), (0.02, 0.02), (0.02, 0.50)]
+points = [(0.50, 0.50), (0.02, 0.02), (0.02, 0.50), (0.98, 0.98)]
 
 # PRINT VOLTAGES
 for x, y in points:
-    I = round(x / H)
-    J = round(y / H)
+    J = round(x / H)
+    I = round((1.0 - y) / h)
     print(f"PHI({x:.2f}, {y:.2f}) = {PHI[I, J]:.6f} V")
