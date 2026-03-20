@@ -1,0 +1,65 @@
+Loading mpi version 2021.6.0
+Loaded Green's-function data from: greens_task3_data.npz
+N = 101, h = 0.010000 m
+MPI ranks used = 16
+
+Point (0.02 m, 0.02 m)
+-----------------------------------------------------------------------------------------------
+Boundary case                          Charge case                   phi_total (V)   stderr (V)
+BC1_all_edges_+100V                    Q0_zero_charge                   100.000000     0.302189
+BC1_all_edges_+100V                    Q1_uniform_10                    100.037170     0.302189
+BC1_all_edges_+100V                    Q2_gradient_top1_bottom0         100.000603     0.302189
+BC1_all_edges_+100V                    Q3_exp_minus10r_centered         100.000110     0.302189
+BC2_top_bottom_+100_left_right_-100    Q0_zero_charge                    -0.320000     0.302189
+BC2_top_bottom_+100_left_right_-100    Q1_uniform_10                     -0.282830     0.302189
+BC2_top_bottom_+100_left_right_-100    Q2_gradient_top1_bottom0          -0.319397     0.302189
+BC2_top_bottom_+100_left_right_-100    Q3_exp_minus10r_centered          -0.319890     0.302189
+BC3_top_left_+200_bottom_0_right_-400  Q0_zero_charge                   100.108000     0.428840
+BC3_top_left_+200_bottom_0_right_-400  Q1_uniform_10                    100.145170     0.428840
+BC3_top_left_+200_bottom_0_right_-400  Q2_gradient_top1_bottom0         100.108603     0.428840
+BC3_top_left_+200_bottom_0_right_-400  Q3_exp_minus10r_centered         100.108110     0.428840
+Point (0.02 m, 0.50 m)
+-----------------------------------------------------------------------------------------------
+Boundary case                          Charge case                   phi_total (V)   stderr (V)
+BC1_all_edges_+100V                    Q0_zero_charge                   100.000000     0.302972
+BC1_all_edges_+100V                    Q1_uniform_10                    100.259991     0.302972
+BC1_all_edges_+100V                    Q2_gradient_top1_bottom0         100.013055     0.302972
+BC1_all_edges_+100V                    Q3_exp_minus10r_centered         100.002014     0.302972
+BC2_top_bottom_+100_left_right_-100    Q0_zero_charge                   -93.202000     0.302972
+BC2_top_bottom_+100_left_right_-100    Q1_uniform_10                    -92.942009     0.302972
+BC2_top_bottom_+100_left_right_-100    Q2_gradient_top1_bottom0         -93.188945     0.302972
+BC2_top_bottom_+100_left_right_-100    Q3_exp_minus10r_centered         -93.199986     0.302972
+BC3_top_left_+200_bottom_0_right_-400  Q0_zero_charge                   192.684000     0.606961
+BC3_top_left_+200_bottom_0_right_-400  Q1_uniform_10                    192.943991     0.606961
+BC3_top_left_+200_bottom_0_right_-400  Q2_gradient_top1_bottom0         192.697055     0.606961
+BC3_top_left_+200_bottom_0_right_-400  Q3_exp_minus10r_centered         192.686014     0.606961
+Point (0.50 m, 0.50 m)
+-----------------------------------------------------------------------------------------------
+Boundary case                          Charge case                   phi_total (V)   stderr (V)
+BC1_all_edges_+100V                    Q0_zero_charge                   100.000000     0.315724
+BC1_all_edges_+100V                    Q1_uniform_10                    102.941007     0.315724
+BC1_all_edges_+100V                    Q2_gradient_top1_bottom0         100.147228     0.315724
+BC1_all_edges_+100V                    Q3_exp_minus10r_centered         100.050671     0.315724
+BC2_top_bottom_+100_left_right_-100    Q0_zero_charge                     0.134000     0.315724
+BC2_top_bottom_+100_left_right_-100    Q1_uniform_10                      3.075007     0.315724
+BC2_top_bottom_+100_left_right_-100    Q2_gradient_top1_bottom0           0.281228     0.315724
+BC2_top_bottom_+100_left_right_-100    Q3_exp_minus10r_centered           0.184671     0.315724
+BC3_top_left_+200_bottom_0_right_-400  Q0_zero_charge                     0.850000     0.772987
+BC3_top_left_+200_bottom_0_right_-400  Q1_uniform_10                      3.791007     0.772987
+BC3_top_left_+200_bottom_0_right_-400  Q2_gradient_top1_bottom0           0.997228     0.772987
+BC3_top_left_+200_bottom_0_right_-400  Q3_exp_minus10r_centered           0.900671     0.772987
+
+Saved results to task4_resultsMPI.csv
+
+ Performance counter stats for 'mpirun -np 16 ./task4mpi.py':
+
+        6431547544      cycles:u                                                              
+        8399975860      instructions:u                   #    1.31  insn per cycle            
+          33518689      cache-misses:u                                                        
+
+       0.648064273 seconds time elapsed
+
+       2.968041000 seconds user
+       3.146995000 seconds sys
+
+

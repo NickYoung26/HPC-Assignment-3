@@ -55,7 +55,6 @@ def solve_poisson_sor(n=101, tol=1e-8, max_iter=50000):
     f = np.zeros((n, n), dtype=float)
 
     # BOUNDARY CONDITIONS FOR NxN GRID (VOLTS)
-    # i = x, j = y in form [i,j]
     phi[0, :]  = 0     #TOP
     phi[-1, :] = 100.0 #BOTTOM
     phi[:, 0]  = 100.0 #LEFT
@@ -100,7 +99,7 @@ def solve_poisson_sor(n=101, tol=1e-8, max_iter=50000):
 # SOLVE
 PHI, H = solve_poisson_sor()
 
-# VOLTAGE OF THREE RANDOM POINTS TO DETERMINE
+# VOLTAGE OF THREE 'RANDOM' POINTS TO DETERMINE
 points = [(0.50, 0.50), (0.02, 0.02), (0.02, 0.50)]
 
 # PRINT VOLTAGES

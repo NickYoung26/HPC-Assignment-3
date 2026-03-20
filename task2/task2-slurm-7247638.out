@@ -1,0 +1,44 @@
+Loading mpi version 2021.6.0
+MPI ranks              : 16
+Grid size N            : 101
+Grid spacing h         : 0.010000 m
+Walkers per point      : 100000
+Walkers on this run/rank split around : 6250 or 6251
+
+Start point (0.27, 0.69)
+  walkers used                     : 100000
+  sum G_Laplace over boundary      : 1.00000000
+  mean G_Laplace over boundary     : 2.50000000e-03
+  max G_Laplace                    : 1.04200000e-02
+  max s.e.(G_Laplace)              : 3.21114055e-04
+  max s.d.(G_Laplace)              : 1.01545180e-01
+
+  sum G_charge over all sites      : 2.11193220e-01
+  mean G_charge over all sites     : 2.07031879e-05
+  max G_charge                     : 3.36664000e-04
+  max s.e.(G_charge)               : 9.02421748e-07
+  max s.d.(G_charge)               : 2.85370813e-04
+
+  G_charge at start point          : 3.36664000e-04
+  s.e.(G_charge at point)          : 8.92902856e-07
+  s.d.(G_charge at point)          : 2.85370813e-04
+  Monte Carlo phi                  : 54.482000 V
+  phi from walk average            : 54.482000 V
+  stddev(phi samples)              : 49.798712 V
+  stderr(phi mean)                 : 0.157477 V
+
+Saved data to greens_task3_data.npz
+Total wall time: 94.852 s
+
+ Performance counter stats for 'mpirun -np 16 ./task2.py':
+
+     4079078042952      cycles:u                                                              
+     8989741630350      instructions:u                   #    2.20  insn per cycle            
+         123505937      cache-misses:u                                                        
+
+      95.763716177 seconds time elapsed
+
+    1501.684920000 seconds user
+      22.481439000 seconds sys
+
+

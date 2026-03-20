@@ -1,0 +1,18 @@
+Loading mpi version 2021.6.0
+Converged in 414 iterations
+PHI(0.50, 0.50) = 50.000000 V
+PHI(0.02, 0.02) = 99.912451 V
+PHI(0.02, 0.50) = 97.640038 V
+
+ Performance counter stats for './task1.py':
+
+       24006987732      cycles:u                                                              
+       61230254554      instructions:u                   #    2.55  insn per cycle            
+            478415      cache-misses:u                                                        
+
+      11.404419863 seconds time elapsed
+
+       6.749990000 seconds user
+       0.199950000 seconds sys
+
+

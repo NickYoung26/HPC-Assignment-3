@@ -15,15 +15,11 @@
 # Job name
 #SBATCH --job-name=Definite_Integral_Compared
 # Output file
-#SBATCH --output=slurm-%j.out
+#SBATCH --output=task5-slurm-%j.out
 # Modify the line below to run your program:
 
 # Run properly
 
-module load mpi
+perf stat -e cycles,instructions,cache-misses ./task5.py
 
-perf stat -e cycles,instructions,cache-misses ./task1.py
-
-perf stat -e cycles,instructions,cache-misses mpirun -np 16 ./task2.py
-
-perf stat -e cycles,instructions,cache-misses mpirun -np 16 ./task3.py
+perf stat -e cycles,instructions,cache-misses ./comparet4t5.py

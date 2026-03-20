@@ -1,0 +1,347 @@
+Loading mpi version 2021.6.0
+1
+MPI ranks              : 1
+Grid size N            : 101
+Grid spacing h         : 0.010000 m
+Walkers per point      : 100000
+Walkers on this run/rank split around : 100000 or 100001
+
+
+  G_charge at start point          : 3.57667000e-04
+  s.e.(G_charge at start point)    : 9.66538241e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 1231.029 s
+
+  G_charge at start point          : 1.68715000e-04
+  s.e.(G_charge at start point)    : 3.41867647e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 1254.188 s
+
+  G_charge at start point          : 1.91195000e-04
+  s.e.(G_charge at start point)    : 4.18434845e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 1403.414 s
+
+ Performance counter stats for 'mpirun -np 1 ./task3speed.py':
+
+     4941659420936      cycles:u                                                              
+    10407623405413      instructions:u                   #    2.11  insn per cycle            
+          21053801      cache-misses:u                                                        
+
+    1404.084761362 seconds time elapsed
+
+    1399.641927000 seconds user
+       0.302522000 seconds sys
+
+
+2
+Saved data to greens_task3_data.npz
+Total wall time: 789.517 s
+Saved data to greens_task3_data.npz
+Total wall time: 798.885 s
+Saved data to greens_task3_data.npz
+Total wall time: 856.370 s
+MPI ranks              : 2
+Grid size N            : 101
+Grid spacing h         : 0.010000 m
+Walkers per point      : 100000
+Walkers on this run/rank split around : 50000 or 50001
+
+
+  G_charge at start point          : 3.58199000e-04
+  s.e.(G_charge at start point)    : 9.62362595e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 789.864 s
+
+  G_charge at start point          : 1.68298000e-04
+  s.e.(G_charge at start point)    : 3.39655461e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 799.198 s
+
+  G_charge at start point          : 1.91452000e-04
+  s.e.(G_charge at start point)    : 4.18673282e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 856.904 s
+
+ Performance counter stats for 'mpirun -np 2 ./task3speed.py':
+
+     5923868372767      cycles:u                                                              
+    12001982662610      instructions:u                   #    2.03  insn per cycle            
+          27644926      cache-misses:u                                                        
+
+     857.587824166 seconds time elapsed
+
+    1699.522395000 seconds user
+      11.074277000 seconds sys
+
+
+4
+Saved data to greens_task3_data.npz
+Total wall time: 341.853 s
+Saved data to greens_task3_data.npz
+Total wall time: 347.554 s
+Saved data to greens_task3_data.npz
+Total wall time: 378.891 s
+Saved data to greens_task3_data.npz
+Total wall time: 341.855 s
+Saved data to greens_task3_data.npz
+Total wall time: 347.556 s
+Saved data to greens_task3_data.npz
+Total wall time: 378.893 s
+Saved data to greens_task3_data.npz
+Total wall time: 341.853 s
+Saved data to greens_task3_data.npz
+Total wall time: 347.554 s
+Saved data to greens_task3_data.npz
+Total wall time: 378.891 s
+MPI ranks              : 4
+Grid size N            : 101
+Grid spacing h         : 0.010000 m
+Walkers per point      : 100000
+Walkers on this run/rank split around : 25000 or 25001
+
+
+  G_charge at start point          : 3.57610000e-04
+  s.e.(G_charge at start point)    : 9.56597553e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 342.205 s
+
+  G_charge at start point          : 1.68296000e-04
+  s.e.(G_charge at start point)    : 3.39618262e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 347.878 s
+
+  G_charge at start point          : 1.91639000e-04
+  s.e.(G_charge at start point)    : 4.18456613e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 379.216 s
+
+ Performance counter stats for 'mpirun -np 4 ./task3speed.py':
+
+     4978958619036      cycles:u                                                              
+    11070126105132      instructions:u                   #    2.22  insn per cycle            
+          35047387      cache-misses:u                                                        
+
+     379.950245970 seconds time elapsed
+
+    1509.145624000 seconds user
+       5.782572000 seconds sys
+
+
+8
+Saved data to greens_task3_data.npz
+Total wall time: 208.671 s
+Saved data to greens_task3_data.npz
+Total wall time: 212.658 s
+Saved data to greens_task3_data.npz
+Total wall time: 234.265 s
+Saved data to greens_task3_data.npz
+Total wall time: 208.671 s
+Saved data to greens_task3_data.npz
+Total wall time: 212.659 s
+Saved data to greens_task3_data.npz
+Total wall time: 234.265 s
+Saved data to greens_task3_data.npz
+Total wall time: 208.679 s
+Saved data to greens_task3_data.npz
+Total wall time: 212.666 s
+Saved data to greens_task3_data.npz
+Total wall time: 234.273 s
+Saved data to greens_task3_data.npz
+Total wall time: 208.676 s
+Saved data to greens_task3_data.npz
+Total wall time: 212.663 s
+Saved data to greens_task3_data.npz
+Total wall time: 234.270 s
+Saved data to greens_task3_data.npz
+Total wall time: 208.679 s
+Saved data to greens_task3_data.npz
+Total wall time: 212.666 s
+Saved data to greens_task3_data.npz
+Total wall time: 234.273 s
+Saved data to greens_task3_data.npz
+Total wall time: 208.676 s
+Saved data to greens_task3_data.npz
+Total wall time: 212.663 s
+Saved data to greens_task3_data.npz
+Total wall time: 234.270 s
+Saved data to greens_task3_data.npz
+Total wall time: 208.679 s
+Saved data to greens_task3_data.npz
+Total wall time: 212.666 s
+Saved data to greens_task3_data.npz
+Total wall time: 234.273 s
+MPI ranks              : 8
+Grid size N            : 101
+Grid spacing h         : 0.010000 m
+Walkers per point      : 100000
+Walkers on this run/rank split around : 12500 or 12501
+
+
+  G_charge at start point          : 3.57189000e-04
+  s.e.(G_charge at start point)    : 9.56353064e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 209.062 s
+
+  G_charge at start point          : 1.68232000e-04
+  s.e.(G_charge at start point)    : 3.38002872e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 213.033 s
+
+  G_charge at start point          : 1.91523000e-04
+  s.e.(G_charge at start point)    : 4.17004082e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 234.634 s
+
+ Performance counter stats for 'mpirun -np 8 ./task3speed.py':
+
+     5730612652940      cycles:u                                                              
+    12499368045755      instructions:u                   #    2.18  insn per cycle            
+          63196307      cache-misses:u                                                        
+
+     235.416020991 seconds time elapsed
+
+    1859.826374000 seconds user
+      17.329312000 seconds sys
+
+
+16
+Saved data to greens_task3_data.npz
+Total wall time: 131.102 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.861 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.553 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.104 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.863 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.555 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.100 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.859 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.551 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.100 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.859 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.551 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.098 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.856 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.549 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.098 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.857 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.549 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.101 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.860 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.552 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.104 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.863 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.555 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.103 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.862 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.554 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.089 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.848 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.540 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.095 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.854 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.546 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.110 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.869 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.561 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.100 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.859 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.551 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.099 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.858 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.550 s
+Saved data to greens_task3_data.npz
+Total wall time: 131.098 s
+Saved data to greens_task3_data.npz
+Total wall time: 133.857 s
+Saved data to greens_task3_data.npz
+Total wall time: 147.549 s
+MPI ranks              : 16
+Grid size N            : 101
+Grid spacing h         : 0.010000 m
+Walkers per point      : 100000
+Walkers on this run/rank split around : 6250 or 6251
+
+
+  G_charge at start point          : 3.57239000e-04
+  s.e.(G_charge at start point)    : 9.54069164e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 131.537 s
+
+  G_charge at start point          : 1.68372000e-04
+  s.e.(G_charge at start point)    : 3.38568599e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 134.274 s
+
+  G_charge at start point          : 1.91346000e-04
+  s.e.(G_charge at start point)    : 4.15457679e-07
+
+Saved data to greens_task3_data.npz
+Total wall time: 147.967 s
+
+ Performance counter stats for 'mpirun -np 16 ./task3speed.py':
+
+     6357305288262      cycles:u                                                              
+    14362560532272      instructions:u                   #    2.26  insn per cycle            
+         133947916      cache-misses:u                                                        
+
+     148.875669224 seconds time elapsed
+
+    2335.361532000 seconds user
+      36.515875000 seconds sys
+
+

@@ -1,0 +1,82 @@
+Loading mpi version 2021.6.0
+MPI ranks              : 16
+Grid size N            : 101
+Grid spacing h         : 0.010000 m
+Walkers per point      : 100000
+Walkers on this run/rank split around : 6250 or 6251
+
+Start point (0.50 m, 0.50 m)
+  walkers used                     : 100000
+  sum G_Laplace over boundary      : 1.00000000
+  max G_Laplace                    : 4.75000000e-03
+  mean s.e.(G_Laplace)             : 1.49845632e-04
+  max s.e.(G_Laplace)              : 2.17426712e-04
+
+  sum G_charge over all sites      : 2.94100682e-01
+  max G_charge                     : 3.57239000e-04
+  mean s.e.(G_charge)              : 3.23564498e-07
+  max s.e.(G_charge)               : 9.62266215e-07
+
+  G_charge at start point          : 3.57239000e-04
+  s.e.(G_charge at start point)    : 9.54069164e-07
+
+  Monte Carlo phi                  : 49.888000 V
+  phi from walk average            : 49.888000 V
+  stddev(phi samples)              : 49.999875 V
+  stderr(phi mean)                 : 0.158113 V
+
+Start point (0.02 m, 0.02 m)
+  walkers used                     : 100000
+  sum G_Laplace over boundary      : 1.00000000
+  max G_Laplace                    : 1.49440000e-01
+  mean s.e.(G_Laplace)             : 4.52961981e-05
+  max s.e.(G_Laplace)              : 1.12742045e-03
+
+  sum G_charge over all sites      : 3.71697800e-03
+  max G_charge                     : 1.68372000e-04
+  mean s.e.(G_charge)              : 2.46876047e-08
+  max s.e.(G_charge)               : 3.74810277e-07
+
+  G_charge at start point          : 1.68372000e-04
+  s.e.(G_charge at start point)    : 3.38568599e-07
+
+  Monte Carlo phi                  : 99.910000 V
+  phi from walk average            : 99.910000 V
+  stddev(phi samples)              : 2.998650 V
+  stderr(phi mean)                 : 0.009483 V
+
+Start point (0.02 m, 0.50 m)
+  walkers used                     : 100000
+  sum G_Laplace over boundary      : 1.00000000
+  max G_Laplace                    : 1.77220000e-01
+  mean s.e.(G_Laplace)             : 7.05086510e-05
+  max s.e.(G_Laplace)              : 1.20753083e-03
+
+  sum G_charge over all sites      : 2.59990670e-02
+  max G_charge                     : 1.91346000e-04
+  mean s.e.(G_charge)              : 9.07328803e-08
+  max s.e.(G_charge)               : 4.89279526e-07
+
+  G_charge at start point          : 1.91346000e-04
+  s.e.(G_charge at start point)    : 4.15457679e-07
+
+  Monte Carlo phi                  : 97.615000 V
+  phi from walk average            : 97.615000 V
+  stddev(phi samples)              : 15.258171 V
+  stderr(phi mean)                 : 0.048251 V
+
+Saved data to greens_task3_data.npz
+Total wall time: 148.112 s
+
+ Performance counter stats for 'mpirun -np 16 ./task3.py':
+
+     6253765324400      cycles:u                                                              
+    13992615323394      instructions:u                   #    2.24  insn per cycle            
+         132925985      cache-misses:u                                                        
+
+     149.065173191 seconds time elapsed
+
+    2338.896544000 seconds user
+      34.157480000 seconds sys
+
+

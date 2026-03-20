@@ -1,0 +1,107 @@
+BC1_all_edges_+100V, Q0_zero_charge, (0.50, 0.50) -> 100.000000 V   [494 iterations]
+BC1_all_edges_+100V, Q0_zero_charge, (0.02, 0.02) -> 100.000000 V   [494 iterations]
+BC1_all_edges_+100V, Q0_zero_charge, (0.02, 0.50) -> 100.000000 V   [494 iterations]
+BC1_all_edges_+100V, Q1_uniform_10, (0.50, 0.50) -> 99.263345 V   [494 iterations]
+BC1_all_edges_+100V, Q1_uniform_10, (0.02, 0.02) -> 99.990699 V   [494 iterations]
+BC1_all_edges_+100V, Q1_uniform_10, (0.02, 0.50) -> 99.934451 V   [494 iterations]
+BC1_all_edges_+100V, Q2_gradient_top1_bottom0, (0.50, 0.50) -> 99.963167 V   [494 iterations]
+BC1_all_edges_+100V, Q2_gradient_top1_bottom0, (0.02, 0.02) -> 99.999848 V   [494 iterations]
+BC1_all_edges_+100V, Q2_gradient_top1_bottom0, (0.02, 0.50) -> 99.996723 V   [494 iterations]
+BC1_all_edges_+100V, Q3_exp_minus10r_centered, (0.50, 0.50) -> 99.987312 V   [494 iterations]
+BC1_all_edges_+100V, Q3_exp_minus10r_centered, (0.02, 0.02) -> 99.999972 V   [494 iterations]
+BC1_all_edges_+100V, Q3_exp_minus10r_centered, (0.02, 0.50) -> 99.999497 V   [494 iterations]
+BC2_top_bottom_+100_left_right_-100, Q0_zero_charge, (0.50, 0.50) -> -0.000000 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q0_zero_charge, (0.02, 0.02) -> 0.000000 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q0_zero_charge, (0.02, 0.50) -> -93.327889 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q1_uniform_10, (0.50, 0.50) -> -0.736655 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q1_uniform_10, (0.02, 0.02) -> -0.009301 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q1_uniform_10, (0.02, 0.50) -> -93.393438 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q2_gradient_top1_bottom0, (0.50, 0.50) -> -0.036833 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q2_gradient_top1_bottom0, (0.02, 0.02) -> -0.000152 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q2_gradient_top1_bottom0, (0.02, 0.50) -> -93.331167 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q3_exp_minus10r_centered, (0.50, 0.50) -> -0.012688 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q3_exp_minus10r_centered, (0.02, 0.02) -> -0.000028 V   [507 iterations]
+BC2_top_bottom_+100_left_right_-100, Q3_exp_minus10r_centered, (0.02, 0.50) -> -93.328392 V   [507 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q0_zero_charge, (0.50, 0.50) -> -0.000000 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q0_zero_charge, (0.02, 0.02) -> 99.824903 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q0_zero_charge, (0.02, 0.50) -> 192.512338 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q1_uniform_10, (0.50, 0.50) -> -0.736655 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q1_uniform_10, (0.02, 0.02) -> 99.815602 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q1_uniform_10, (0.02, 0.50) -> 192.446789 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q2_gradient_top1_bottom0, (0.50, 0.50) -> -0.036833 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q2_gradient_top1_bottom0, (0.02, 0.02) -> 99.824751 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q2_gradient_top1_bottom0, (0.02, 0.50) -> 192.509061 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q3_exp_minus10r_centered, (0.50, 0.50) -> -0.012688 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q3_exp_minus10r_centered, (0.02, 0.02) -> 99.824875 V   [518 iterations]
+BC3_top_left_+200_bottom_0_right_-400, Q3_exp_minus10r_centered, (0.02, 0.50) -> 192.511835 V   [518 iterations]
+
+Saved deterministic results to task5_deterministic_results.csv
+
+ Performance counter stats for './task5.py':
+
+      314720956333      cycles:u                                                              
+      832195782493      instructions:u                   #    2.64  insn per cycle            
+            923215      cache-misses:u                                                        
+
+      85.806225786 seconds time elapsed
+
+      85.509067000 seconds user
+       0.053628000 seconds sys
+
+
+Task 5 comparison
+------------------------------------------------------------------------------------------------------------------------
+Point              Boundary case                          Charge case                        phi_MC     sigma_MC      phi_det         diff          z  within 1σ
+(0.50, 0.50)       BC1_all_edges_+100V                    Q0_zero_charge                 100.000000     0.315724   100.000000    -0.000000     -0.000       True
+(0.50, 0.50)       BC1_all_edges_+100V                    Q1_uniform_10                  102.941007     0.315724    99.263345     3.677662     11.648      False
+(0.50, 0.50)       BC1_all_edges_+100V                    Q2_gradient_top1_bottom0       100.147228     0.315724    99.963167     0.184061      0.583       True
+(0.50, 0.50)       BC1_all_edges_+100V                    Q3_exp_minus10r_centered       100.050671     0.315724    99.987312     0.063360      0.201       True
+(0.50, 0.50)       BC2_top_bottom_+100_left_right_-100    Q0_zero_charge                   0.134000     0.315724    -0.000000     0.134000      0.424       True
+(0.50, 0.50)       BC2_top_bottom_+100_left_right_-100    Q1_uniform_10                    3.075007     0.315724    -0.736655     3.811662     12.073      False
+(0.50, 0.50)       BC2_top_bottom_+100_left_right_-100    Q2_gradient_top1_bottom0         0.281228     0.315724    -0.036833     0.318061      1.007      False
+(0.50, 0.50)       BC2_top_bottom_+100_left_right_-100    Q3_exp_minus10r_centered         0.184671     0.315724    -0.012688     0.197360      0.625       True
+(0.50, 0.50)       BC3_top_left_+200_bottom_0_right_-400  Q0_zero_charge                   0.850000     0.772987    -0.000000     0.850000      1.100      False
+(0.50, 0.50)       BC3_top_left_+200_bottom_0_right_-400  Q1_uniform_10                    3.791007     0.772987    -0.736655     4.527662      5.857      False
+(0.50, 0.50)       BC3_top_left_+200_bottom_0_right_-400  Q2_gradient_top1_bottom0         0.997228     0.772987    -0.036833     1.034061      1.338      False
+(0.50, 0.50)       BC3_top_left_+200_bottom_0_right_-400  Q3_exp_minus10r_centered         0.900671     0.772987    -0.012688     0.913360      1.182      False
+(0.02, 0.02)       BC1_all_edges_+100V                    Q0_zero_charge                 100.000000     0.302189   100.000000     0.000000      0.000       True
+(0.02, 0.02)       BC1_all_edges_+100V                    Q1_uniform_10                  100.037170     0.302189    99.990699     0.046471      0.154       True
+(0.02, 0.02)       BC1_all_edges_+100V                    Q2_gradient_top1_bottom0       100.000603     0.302189    99.999848     0.000755      0.002       True
+(0.02, 0.02)       BC1_all_edges_+100V                    Q3_exp_minus10r_centered       100.000110     0.302189    99.999972     0.000138      0.000       True
+(0.02, 0.02)       BC2_top_bottom_+100_left_right_-100    Q0_zero_charge                  -0.320000     0.302189     0.000000    -0.320000     -1.059      False
+(0.02, 0.02)       BC2_top_bottom_+100_left_right_-100    Q1_uniform_10                   -0.282830     0.302189    -0.009301    -0.273529     -0.905       True
+(0.02, 0.02)       BC2_top_bottom_+100_left_right_-100    Q2_gradient_top1_bottom0        -0.319397     0.302189    -0.000152    -0.319245     -1.056      False
+(0.02, 0.02)       BC2_top_bottom_+100_left_right_-100    Q3_exp_minus10r_centered        -0.319890     0.302189    -0.000028    -0.319862     -1.058      False
+(0.02, 0.02)       BC3_top_left_+200_bottom_0_right_-400  Q0_zero_charge                 100.108000     0.428840    99.824903     0.283097      0.660       True
+(0.02, 0.02)       BC3_top_left_+200_bottom_0_right_-400  Q1_uniform_10                  100.145170     0.428840    99.815602     0.329568      0.769       True
+(0.02, 0.02)       BC3_top_left_+200_bottom_0_right_-400  Q2_gradient_top1_bottom0       100.108603     0.428840    99.824751     0.283852      0.662       True
+(0.02, 0.02)       BC3_top_left_+200_bottom_0_right_-400  Q3_exp_minus10r_centered       100.108110     0.428840    99.824875     0.283235      0.660       True
+(0.02, 0.50)       BC1_all_edges_+100V                    Q0_zero_charge                 100.000000     0.302972   100.000000    -0.000000     -0.000       True
+(0.02, 0.50)       BC1_all_edges_+100V                    Q1_uniform_10                  100.259991     0.302972    99.934451     0.325540      1.074      False
+(0.02, 0.50)       BC1_all_edges_+100V                    Q2_gradient_top1_bottom0       100.013055     0.302972    99.996723     0.016333      0.054       True
+(0.02, 0.50)       BC1_all_edges_+100V                    Q3_exp_minus10r_centered       100.002014     0.302972    99.999497     0.002517      0.008       True
+(0.02, 0.50)       BC2_top_bottom_+100_left_right_-100    Q0_zero_charge                 -93.202000     0.302972   -93.327889     0.125889      0.416       True
+(0.02, 0.50)       BC2_top_bottom_+100_left_right_-100    Q1_uniform_10                  -92.942009     0.302972   -93.393438     0.451429      1.490      False
+(0.02, 0.50)       BC2_top_bottom_+100_left_right_-100    Q2_gradient_top1_bottom0       -93.188945     0.302972   -93.331167     0.142222      0.469       True
+(0.02, 0.50)       BC2_top_bottom_+100_left_right_-100    Q3_exp_minus10r_centered       -93.199986     0.302972   -93.328392     0.128406      0.424       True
+(0.02, 0.50)       BC3_top_left_+200_bottom_0_right_-400  Q0_zero_charge                 192.684000     0.606961   192.512338     0.171662      0.283       True
+(0.02, 0.50)       BC3_top_left_+200_bottom_0_right_-400  Q1_uniform_10                  192.943991     0.606961   192.446789     0.497202      0.819       True
+(0.02, 0.50)       BC3_top_left_+200_bottom_0_right_-400  Q2_gradient_top1_bottom0       192.697055     0.606961   192.509061     0.187994      0.310       True
+(0.02, 0.50)       BC3_top_left_+200_bottom_0_right_-400  Q3_exp_minus10r_centered       192.686014     0.606961   192.511835     0.174178      0.287       True
+
+Saved comparison table to task5_comparison.csv
+Within 1σ: 24/36
+Within 2σ: 33/36
+
+ Performance counter stats for './comparet4t5.py':
+
+          70855513      cycles:u                                                              
+          92064068      instructions:u                   #    1.30  insn per cycle            
+            135319      cache-misses:u                                                        
+
+       0.069675950 seconds time elapsed
+
+       0.035590000 seconds user
+       0.010584000 seconds sys
+
+
